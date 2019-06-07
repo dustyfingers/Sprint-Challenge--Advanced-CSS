@@ -7,15 +7,25 @@
     align-items: center;
     padding: 2rem;
     font-size: 4rem;
-    background-color: lightgray;
+    background-color: rgb(240, 240, 240);
     cursor: pointer;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.8;
     .nav-list {
         display: flex;
         flex-direction: row;
         margin-top: 2rem;
-        width: 50%;
+        width: 60%;
         justify-content: space-between;
         font-size: 2rem;
-        cursor: pointer;
+        
+        @media @phone {
+            width: 98%;
+        }
+        li {
+            cursor: pointer;
+        }
     }
 }

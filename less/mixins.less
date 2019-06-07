@@ -1,13 +1,13 @@
 // Mixins Here
 
-.call-to-action-btn(@width: 110px, @background: #23293b, @color: white) {
+.call-to-action-btn(@width: 110px, @background: #23293b, @color: white, @border-radius: 10px) {
     display: flex;
     align-items: center;
     width: @width;
     background-color: @background;
     color: @color;
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: @border-radius;
     font-size: 2rem;
     cursor: pointer;
 }
